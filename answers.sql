@@ -3,7 +3,7 @@
 
 USE salesdb;
 
-/* Question 1 🧑‍💼
+/* Question 1 
    Retrieve firstName, lastName, email, and officeCode of all employees
    using an INNER JOIN with the offices table on officeCode.
 */
@@ -19,7 +19,7 @@ INNER JOIN
     ON e.officeCode = o.officeCode;
 
 
-/* Question 2 🛍️
+/* Question 2
    Retrieve productName, productVendor, and productLine
    from products table using a LEFT JOIN with productlines table.
    This ensures all products are listed even if their product line is missing.
@@ -35,7 +35,7 @@ LEFT JOIN
     ON p.productLine = pl.productLine;
 
 
-/* Question 3 📦
+/* Question 3 
    Retrieve orderDate, shippedDate, status, and customerNumber
    for the first 10 orders using a RIGHT JOIN of customers with orders.
    This ensures all orders are listed even if customer info is missing.
